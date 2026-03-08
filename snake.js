@@ -76,7 +76,7 @@ function advanceSnake(){
     const didEatFood = snake[0].x === foodX && snake[0].y === foodY
     if(didEatFood){
         score += 10
-        document.getElementById("score").innerHTML = score
+        document.getElementById("score").innerHTML = `Score: ${score}`
         createFood()
     }else{
         snake.pop()
@@ -85,7 +85,10 @@ function advanceSnake(){
 }
 
 function main(){
-    if (didGameEnd()) return
+    if (didGameEnd()) {
+        document.getElementById("gameOver").style.display = "block"
+        return
+    }
 
     setTimeout(function onTick() { //This main() is called repeatedly to keep the snake moving
         isChangingDirection = false
