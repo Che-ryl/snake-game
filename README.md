@@ -1,1 +1,1 @@
-<title>Snake Game</title>
+#Snake Game
