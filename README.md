@@ -13,4 +13,4 @@ Visit [snake game](https://shiny-sunburst-1efe0c.netlify.app/).
 
 ## License
 This project is licensed under the MIT License.\
-See the [License]() file for details.
+See the [License](/LICENSE) file for details.
